@@ -7,6 +7,7 @@ public class MIB {
 	//username, language, id - created at random and unique
 	//id - how to ensure it's unique - UUID?
 	//label used to store on the server and to indentify the MIB
+	//label is added after finish
 	private String label;
 	private String userLogin;
 	

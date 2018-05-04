@@ -13,6 +13,9 @@ public class User implements UserCommons{
 	private String email;
 	private String login;
 	
+	//to make user identification and the MIB labeling process easier
+	private int id;
+	
 	//how to ensure security of the password?
 	private String password;
 	
@@ -68,6 +71,7 @@ public class User implements UserCommons{
 	private int messagesAssigned;
 	
 	//if a user does not want to receive feedback from a specific person / people
+	//the logins will be stored in here
 	private String[] noFeedbackFrom;
 	
 	public boolean canSendMIB() {

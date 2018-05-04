@@ -1,4 +1,4 @@
-package tests;
+package net.langshark.tests;
 
 import net.langshark.bean.User;
 

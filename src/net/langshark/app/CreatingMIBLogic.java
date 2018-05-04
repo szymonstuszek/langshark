@@ -46,6 +46,7 @@ public class CreatingMIBLogic implements UserCommons{
 			
 			
 			//step 1
+			//check what languages the user speaks
 			//returns an array of Strings or enums that need to be transformed to Strings
 			//gets the languages as a dropdown list
 			//on the mobile app - empty bottle with a flag
@@ -53,6 +54,7 @@ public class CreatingMIBLogic implements UserCommons{
 			
 			//wait for the selection
 			//after click / tap:
+			//the flag get attached to the bottle
 			selectLanguage(mib);
 			
 			
@@ -76,10 +78,10 @@ public class CreatingMIBLogic implements UserCommons{
 			
 			
 			//display the message
-			//show keywords
-			//show picture - future message
+			//show keywords and/or an idiom
+			//show picture - future option
 			//start timer
-			//user has option to prepare - cancels timer, MIB spontaneous set to false - less points
+			//user has option to prepare - cancels timer, MIB spontaneous = false - less points
 			//after clicking ready or when timer runs out proceed to recording
 			
 			
@@ -91,8 +93,12 @@ public class CreatingMIBLogic implements UserCommons{
 			//select done
 			//paper appears in MIB
 			//MIB gets corked
+			//add labels
 			
 			//swipe to throw - upload to server
+			//progress bar of the uploading - animation of a bottle floating when it's done, it moves out of the screen
+			
+			//file creation ended it goes to the server and gets stored there
 			
 			
 		
@@ -127,17 +133,12 @@ public class CreatingMIBLogic implements UserCommons{
 		}
 		
 		
-		
-		
-		
-		
 	}
 
 
 	private void selectLanguage(MIB mib) {
 		String testLanguage = "testLanguage";
 		//makes the flag appear on the bottle
-		//how to steer that?
 		mib.setLanguage(testLanguage);
 	}
 
