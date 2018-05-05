@@ -11,6 +11,10 @@ public class MIB {
 	private String label;
 	private String userLogin;
 	
+	
+	//to check what kind of file it is, store as string or enum?
+	private String extension;
+	
 	//do not allow that it is longer than 2 min
 	private int audioLength;
 	
