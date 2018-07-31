@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-ng-app="app" lang="en">
+    <head>
+        <title>Language shark</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/styles.min.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <style>
+
+            html,
+            body {
+                margin:0;
+                padding:0;
+                height:100%;
+            }
+            
+            .test {
+                color: red;
+            }
+
+            #container {
+                min-height:100%;
+                position:relative;
+                /*                height: auto !important; */
+            }
+
+            #header {
+                padding:5px;
+            }
+
+            #body {
+                padding:10px;
+                padding-bottom:90px;   /* Height of the footer */
+            }
+            #footer {
+                position:absolute;
+                bottom:0;
+                width:100%;
+                padding: 15px;
+                background-color: #3c3c3c;
+                align-content: center;
+            }
+
+            /* On small screens, set height to 'auto' for sidenav and grid */
+            @media screen and (max-width: 767px) {
+                .row.content {
+                    /*                    background-color: green;*/
+                    height:400px} 
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div  id="container">
+
+            <div id="header" >
+                <ng-include src="'partials/nav_shark.html'"></ng-include>
+            </div>
+
+            <div id="body">
+                <div ng-view></div>
+            </div>
+
+            <div id="footer">
+                <ng-include src="'partials/footer.html'"></ng-include>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/lib/angular/angular.js"></script>
+        <script type="text/javascript" src="js/lib/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="js/lib/angular-resource/angular-resource.js"></script>
+        <script type="text/javascript" src="js/app/app.js"></script>
+    </body>
+</html>
